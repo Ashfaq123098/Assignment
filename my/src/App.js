@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ArticlePage from "./pages/ArticlePage";
 import AuthorProfile from "./pages/AuthorProfile";
+import "./style.css";
+
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("article"); // "article" | "author"

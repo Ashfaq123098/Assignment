@@ -1,4 +1,5 @@
 import { authors } from "../DummyData/dummyData";
+import "../style.css";
 
 export default function AuthorProfile({ authorId, onBack }) {
   const author = authors.find((a) => a.id === authorId);
