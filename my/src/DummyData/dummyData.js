@@ -30,9 +30,7 @@ export const authors = [
       title: "React Performance Tips",
       content: "Use memoization, lazy loading, and virtualization to speed up apps...",
     },
-    comments: [
-      { id: 301, text: "Thanks for the tips!", author: "Chris" },
-    ],
+    comments: [{ id: 301, text: "Thanks for the tips!", author: "Chris" }],
   },
   {
     id: 4,
@@ -56,5 +54,4 @@ export const authors = [
       { id: 501, text: "Testing feels less scary now!", author: "Sam" },
     ],
   },
-  // 👉 একইভাবে ২০ জন পর্যন্ত বানিয়ে নিবেন
 ];

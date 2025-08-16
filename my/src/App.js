@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import ArticlePage from "./pages/ArticlePage";
+import AuthorProfile from "./pages/AuthorProfile";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("article"); // "article" | "author"
@@ -16,4 +17,18 @@ export default function App() {
     setSelectedAuthor(null);
   };
 
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {currentPage === "article" && (
+        <ArticlePage
+          onAuthorClick={handleAuthorClick}
+          pageNumber={articlePageNumber}
+          setPageNumber={setArticlePageNumber}
+        />
+      )}
+      {currentPage === "author" && (
+        <AuthorProfile authorId={selectedAuthor} onBack={goBack} />
+      )}
+    </div>
+  );
 }
